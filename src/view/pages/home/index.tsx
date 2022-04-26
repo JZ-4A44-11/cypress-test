@@ -1,7 +1,14 @@
-import { FC, ReactElement } from 'react'
+import { FC, ReactElement, useEffect } from 'react'
 import Container from '../../../Container'
+import { useAppSelector } from '../../../hooks/store'
 
 const Home: FC = (): ReactElement => {
+  const galleryState = useAppSelector((state) => state.gallery)
+
+  useEffect(() => {
+    console.log(galleryState)
+  }, [galleryState])
+
   return (
     <main>
       <Container>
