@@ -1,18 +1,23 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["cypress"],
+    "types": ["cypress", "@testing-library/cypress"],
     "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "strict": true,
-    "noEmit": true
+    "noEmit": true,
+
+    "paths": {
+      "~/*": ["src/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["./", "src", "cypress"]
 }
