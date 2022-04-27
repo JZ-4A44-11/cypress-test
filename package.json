@@ -24,6 +24,8 @@
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "@cypress/react": "^5.12.4",
+    "@cypress/vite-dev-server": "^2.2.2",
     "@testing-library/cypress": "^8.0.2",
     "@types/react": "^18.0.6",
     "@types/react-dom": "^18.0.2",
